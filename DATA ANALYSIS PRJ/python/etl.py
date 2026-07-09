@@ -1,9 +1,9 @@
 import pandas as pd
 from pathlib import Path
 
-# =====================================================
+
 # PROJECT PATHS
-# =====================================================
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -39,9 +39,9 @@ print("=" * 60)
 print("DATA LOADED SUCCESSFULLY")
 print("=" * 60)
 
-# =====================================================
+
 # DATE CONVERSION
-# =====================================================
+
 
 date_columns = [
     "order_purchase_timestamp",
@@ -56,9 +56,9 @@ for col in date_columns:
 
 print("✓ Date columns converted")
 
-# =====================================================
+
 # FEATURE ENGINEERING
-# =====================================================
+
 
 orders["delivery_days"] = (
     orders["order_delivered_customer_date"]
@@ -94,9 +94,9 @@ orders["order_weekday"] = orders["order_purchase_timestamp"].dt.day_name()
 
 print("✓ Business features created")
 
-# =====================================================
+
 # HANDLE MISSING VALUES
-# =====================================================
+
 
 products["product_category_name"] = products[
     "product_category_name"
@@ -140,9 +140,8 @@ reviews["review_comment_message"] = reviews[
 
 print("✓ Missing values handled")
 
-# =====================================================
+
 # TRANSLATE PRODUCT CATEGORIES
-# =====================================================
 
 products = products.merge(
     translation,
@@ -156,17 +155,15 @@ products["product_category_name_english"] = products[
 
 print("✓ Product categories translated")
 
-# =====================================================
+
 # REMOVE DUPLICATES
-# =====================================================
+
 
 geolocation = geolocation.drop_duplicates()
 
 print("✓ Duplicate geolocations removed")
 
-# =====================================================
 # SAVE CLEANED DATA
-# =====================================================
 
 print("\nSaving files to:")
 print(OUTPUT_PATH)
