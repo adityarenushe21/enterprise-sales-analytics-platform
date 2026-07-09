@@ -114,14 +114,15 @@ Interactive slicers allow filtering by year, state, and payment method.
 ## Dashboard Preview
 
 ### Dashboard Page 1
+<img width="1167" height="652" alt="Screenshot 2026-07-10 000925" src="https://github.com/user-attachments/assets/7cb94f5a-59ba-41cc-88c4-4f536749d95d" />
 
-(Add first dashboard screenshot here)
+
+
 
 ### Dashboard Page 2
+<img width="1161" height="653" alt="Screenshot 2026-07-10 000937" src="https://github.com/user-attachments/assets/8807add7-6eff-47df-a493-9f5187ec3f2e" />
 
-(Add second dashboard screenshot here)
 
----
 
 ## Key Business Insights
 
@@ -155,4 +156,4 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ## Author
 
-Aditya
+Aditya Renushe
